@@ -350,46 +350,50 @@
     </footer>
 
     <script>
-      function showServiceInfo(serviceName) {
-        const modal = document.getElementById("service-modal");
-        const modalTitle = document.getElementById("modal-title");
-        const modalContent = document.getElementById("modal-content");
+  function showServiceInfo(serviceName) {
+    const modal = document.getElementById("service-modal");
+    const modalTitle = document.getElementById("modal-title");
+    const modalContent = document.getElementById("modal-content");
 
-        // Set the title and content based on the service name
-        if (serviceName === "Surat Izin Pelayaran (SIPI)") {
-          modalTitle.innerText = serviceName;
-          modalContent.innerHTML = `
-                    <h3 class="font-semibold">Tujuan</h3>
-                    <p>Izin pelayaran untuk kapal berbendera Indonesia yang digunakan untuk kegiatan pelayaran di perairan Indonesia.</p>
-                    <h3 class="font-semibold">Persyaratan</h3>
-                    <ul class="list-disc list-inside">
-                        <li>Salinan dokumen kapal (BPKB, STNK, dll.)</li>
-                        <li>Surat permohonan dari pemilik kapal</li>
-                        <li>Dokumen identitas pemohon</li>
-                        <li>Surat keterangan dari pihak terkait (jika diperlukan)</li>
-                    </ul>
-                    <h3 class="font-semibold">Prosedur</h3>
-                    <ol class="list-decimal list-inside">
-                        <li>Siapkan semua dokumen yang diperlukan.</li>
-                        <li>Ajukan permohonan ke Kantor kesyahbandaran.</li>
-                        <li>Petugas akan memverifikasi dokumen.</li>
-                        <li>Jika semua dokumen lengkap, izin akan diterbitkan.</li>
-                    </ol>
-                    <h3 class="font-semibold">Kontak</h3>
-                    <p>Untuk informasi lebih lanjut, silakan hubungi:</p>
-                    <p>Telepon: (0411) 1234567</p>
-                    <p>Email: kesyahbandaran.makassar@kemenhub.go.id</p>
-                `;
-        }
+    // Set title
+    modalTitle.innerText = serviceName;
 
-        // Show the modal
-        modal.classList.remove("hidden");
-      }
+    // Set same content for all services
+    modalContent.innerHTML = `
+      <h3 class="font-semibold">Tujuan</h3>
+      <p>Izin pelayaran untuk kapal berbendera Indonesia yang digunakan untuk kegiatan pelayaran di perairan Indonesia.</p>
 
-      function closeModal() {
-        const modal = document.getElementById("service-modal");
-        modal.classList.add("hidden");
-      }
-    </script>
+      <h3 class="font-semibold mt-3">Persyaratan</h3>
+      <ul class="list-disc list-inside">
+          <li>Salinan dokumen kapal (BPKB, STNK, dll.)</li>
+          <li>Surat permohonan dari pemilik kapal</li>
+          <li>Dokumen identitas pemohon</li>
+          <li>Surat keterangan dari pihak terkait (jika diperlukan)</li>
+      </ul>
+
+      <h3 class="font-semibold mt-3">Prosedur</h3>
+      <ol class="list-decimal list-inside">
+          <li>Siapkan semua dokumen yang diperlukan.</li>
+          <li>Ajukan permohonan ke Kantor kesyahbandaran.</li>
+          <li>Petugas akan memverifikasi dokumen.</li>
+          <li>Jika semua dokumen lengkap, izin akan diterbitkan.</li>
+      </ol>
+
+      <h3 class="font-semibold mt-3">Kontak</h3>
+      <p>Untuk informasi lebih lanjut, silakan hubungi:</p>
+      <p>Telepon: (0411) 1234567</p>
+      <p>Email: kesyahbandaran.makassar@kemenhub.go.id</p>
+    `;
+
+    // Show the modal
+    modal.classList.remove("hidden");
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("service-modal");
+    modal.classList.add("hidden");
+  }
+</script>
+
   </body>
 </html>
