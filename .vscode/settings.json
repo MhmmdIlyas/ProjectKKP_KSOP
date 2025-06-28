@@ -1,0 +1,17 @@
+{
+    "window.zoomLevel": 0.1,
+    "editor.wordWrap": "on",
+    "terminal.integrated.fontSize": 12,
+    "editor.fontFamily": "fira code",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 25,
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    "workbench.colorTheme": "Dracula Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#0b1f63",
+        "titleBar.activeBackground": "#0d4a40",
+        "activityBar.background": "#023a45",
+        "activityBar.activeBackground": "#08ae40",
+    }
+}

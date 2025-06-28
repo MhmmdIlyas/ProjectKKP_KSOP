@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Panduan Pelayanan - Kantor kesyahbandaran dan Otoritas Pelabuhan Utama
+      Makassar
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .step-item:not(:last-child):after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 11px;
+        height: 100%;
+        width: 1px;
+        background-color: #cbd5e1; /* Tailwind's gray-300 */
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .active-tab {
+        background-color: #2563eb; /* Tailwind's blue-600 */
+        color: white;
+      }
+      .service-icon {
+        font-size: 2.5rem; /* Tailwind's text-4xl */
+        margin-bottom: 0.75rem; /* Tailwind's mb-3 */
+        color: #3b82f6; /* Tailwind's blue-600 */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white shadow-lg">
+      <div class="container mx-auto px-4 py-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="flex items-center mb-4 md:mb-0">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/15/Logo_Kementerian_Perhubungan_Indonesia_%28Kemenhub%29.png"
+              alt="Logo"
+              class="mr-3"
+              width="100"
+            />
+
+            <div>
+              <h1 class="text-xl md:text-2xl font-bold">
+                Kantor Kesyahbandaran dan Otoritas<br />
+                Pelabuhan Utama Makassar
+              </h1>
+              <p class="text-sm text-blue-200">Pelayanan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-700 text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Panduan Pelayanan Administrasi
+        </h2>
+        <p class="max-w-2xl mx-auto text-blue-100">
+          Berikut panduan lengkap untuk pengurusan berbagai jenis surat dan
+          dokumen di Kantor Syahbandar dan Otoritas Pelabuhan Makassar
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="container mx-auto px-4 py-8">
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-bold text-blue-800">
+          Jenis Pelayanan Tersedia
+        </h3>
+        <p class="text-gray-600">
+          Pilih salah satu jenis pelayanan untuk melihat panduan lengkap
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12"
+      >
+        <!-- Service 1 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="0"
+          onclick="showServiceInfo('Surat Izin Pelayaran (SIPI)')"
+        >
+          <div class="text-center">
+            <i class="fas fa-ship service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">
+              Surat Izin Pelayaran (SIPI)
+            </h4>
+            <p class="text-gray-600 text-sm">
+              Izin pelayaran untuk kapal berbendera Indonesia
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="1"
+          onclick="showServiceInfo('SIKPI')"
+        >
+          <div class="text-center">
+            <i class="fas fa-fish service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">SIKPI</h4>
+            <p class="text-gray-600 text-sm">
+              Surat Izin Kapal Pengangkut Ikan
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="2"
+          onclick="showServiceInfo('Sertifikat Kelaikan')"
+        >
+          <div class="text-center">
+            <i class="fas fa-certificate service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">
+              Sertifikat Kelaikan
+            </h4>
+            <p class="text-gray-600 text-sm">Sertifikat kondisi teknis kapal</p>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="3"
+          onclick="showServiceInfo('Izin Berlabuh')"
+        >
+          <div class="text-center">
+            <i class="fas fa-anchor service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">Izin Berlabuh</h4>
+            <p class="text-gray-600 text-sm">
+              Izin untuk kapal berlabuh di perairan pelabuhan
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="4"
+          onclick="showServiceInfo('Izin Tambat')"
+        >
+          <div class="text-center">
+            <i class="fas fa-dock service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">Izin Tambat</h4>
+            <p class="text-gray-600 text-sm">
+              Izin untuk kapal tambat di dermaga
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="5"
+          onclick="showServiceInfo('Kapal Asing')"
+        >
+          <div class="text-center">
+            <i class="fas fa-globe-americas service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">Kapal Asing</h4>
+            <p class="text-gray-600 text-sm">
+              Izin masuk pelabuhan untuk kapal asing
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 7 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="6"
+          onclick="showServiceInfo('Surat Laut')"
+        >
+          <div class="text-center">
+            <i class="fas fa-file-alt service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">Surat Laut</h4>
+            <p class="text-gray-600 text-sm">Dokumen kebangsaan kapal</p>
+          </div>
+        </div>
+
+        <!-- Service 8 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="7"
+          onclick="showServiceInfo('Izin Sandar')"
+        >
+          <div class="text-center">
+            <i class="fas fa-ship service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">Izin Sandar</h4>
+            <p class="text-gray-600 text-sm">Izin sandar kapal di dermaga</p>
+          </div>
+        </div>
+
+        <!-- Service 9 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="8"
+          onclick="showServiceInfo('Bongkar Muat')"
+        >
+          <div class="text-center">
+            <i class="fas fa-boxes service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">Bongkar Muat</h4>
+            <p class="text-gray-600 text-sm">
+              Izin kegiatan bongkar muat barang
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 10 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="9"
+          onclick="showServiceInfo('Laporan Kejadian')"
+        >
+          <div class="text-center">
+            <i class="fas fa-exclamation-triangle service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">
+              Laporan Kejadian
+            </h4>
+            <p class="text-gray-600 text-sm">
+              Pelaporan insiden di kapal/pelabuhan
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 11 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="10"
+          onclick="showServiceInfo('Kapal Wisata')"
+        >
+          <div class="text-center">
+            <i class="fas fa-sailboat service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">Kapal Wisata</h4>
+            <p class="text-gray-600 text-sm">
+              Izin untuk kapal layar wisata/nelayan
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 12 -->
+        <div
+          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
+          data-index="11"
+          onclick="showServiceInfo('Surat Tugas ABK')"
+        >
+          <div class="text-center">
+            <i class="fas fa-users service-icon"></i>
+            <h4 class="font-bold text-lg mb-2 text-blue-800">
+              Surat Tugas ABK
+            </h4>
+            <p class="text-gray-600 text-sm">Surat tugas pengawakan kapal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for Service Guide -->
+    <div
+      id="service-modal"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+    >
+      <div class="bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto">
+        <h2 class="text-2xl font-bold mb-4" id="modal-title">
+          Surat Izin Pelayaran (SIPI)
+        </h2>
+        <div id="modal-content" class="mb-4"></div>
+        <button
+          onclick="closeModal()"
+          class="mt-4 bg-blue-600 text-white px-4 py-2 rounded"
+        >
+          Tutup
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i class="fas fa-map-marker-alt mr-3 text-blue-300"></i>
+                Jl. Satando No.55, Makassar, Sulawesi Selatan
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone-alt mr-3 text-blue-300"></i>
+                (0411) 1234567
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope mr-3 text-blue-300"></i>
+                ksop_utama.makassar@dephub.go.id
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Jam Pelayanan</h3>
+            <ul class="space-y-2">
+              <li>Senin - Kamis: 08.00 - 16.00 WITA</li>
+              <li>Jumat: 08.00 - 16.30 WITA</li>
+              <li>Sabtu & Minggu: Libur</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Tautan Terkait</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-blue-300"
+                  >Direktorat Jenderal Perhubungan Laut</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue-300"
+                  >Kementerian Perhubungan</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-blue-300">Pelabuhan Makassar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400"
+        >
+          <p>
+            2025 Kantor kesyahbandaran dan Otoritas Pelabuhan utama Makassar.
+            All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function showServiceInfo(serviceName) {
+        const modal = document.getElementById("service-modal");
+        const modalTitle = document.getElementById("modal-title");
+        const modalContent = document.getElementById("modal-content");
+
+        // Set the title and content based on the service name
+        if (serviceName === "Surat Izin Pelayaran (SIPI)") {
+          modalTitle.innerText = serviceName;
+          modalContent.innerHTML = `
+                    <h3 class="font-semibold">Tujuan</h3>
+                    <p>Izin pelayaran untuk kapal berbendera Indonesia yang digunakan untuk kegiatan pelayaran di perairan Indonesia.</p>
+                    <h3 class="font-semibold">Persyaratan</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Salinan dokumen kapal (BPKB, STNK, dll.)</li>
+                        <li>Surat permohonan dari pemilik kapal</li>
+                        <li>Dokumen identitas pemohon</li>
+                        <li>Surat keterangan dari pihak terkait (jika diperlukan)</li>
+                    </ul>
+                    <h3 class="font-semibold">Prosedur</h3>
+                    <ol class="list-decimal list-inside">
+                        <li>Siapkan semua dokumen yang diperlukan.</li>
+                        <li>Ajukan permohonan ke Kantor kesyahbandaran.</li>
+                        <li>Petugas akan memverifikasi dokumen.</li>
+                        <li>Jika semua dokumen lengkap, izin akan diterbitkan.</li>
+                    </ol>
+                    <h3 class="font-semibold">Kontak</h3>
+                    <p>Untuk informasi lebih lanjut, silakan hubungi:</p>
+                    <p>Telepon: (0411) 1234567</p>
+                    <p>Email: kesyahbandaran.makassar@kemenhub.go.id</p>
+                `;
+        }
+
+        // Show the modal
+        modal.classList.remove("hidden");
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("service-modal");
+        modal.classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>
