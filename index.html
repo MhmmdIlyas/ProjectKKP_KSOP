@@ -66,229 +66,134 @@
     <section class="bg-blue-700 text-white py-12">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Panduan Pelayanan Administrasi
+          PANDUAN PELAYANAN ADMINISTRASI PERKAPALAN DAN KEPELAUTAN
         </h2>
         <p class="max-w-2xl mx-auto text-blue-100">
-          Berikut panduan lengkap untuk pengurusan berbagai jenis surat dan
-          dokumen di Kantor Syahbandar dan Otoritas Pelabuhan Makassar
+          Berikut panduan lengkap untuk pengurusan dokumen kepelautan dan penyijilan awak kapal pada bidang perkapalan dan kepelautan seksi kepelautan di Kantor Kesyahbandaran dan Otoritas Pelabuhan Utama Makassar
         </p>
       </div>
     </section>
 
     <!-- Services Grid Section -->
-    <section class="container mx-auto px-4 py-8">
-      <div class="text-center mb-8">
-        <h3 class="text-2xl font-bold text-blue-800">
-          Jenis Pelayanan Tersedia
-        </h3>
-        <p class="text-gray-600">
-          Pilih salah satu jenis pelayanan untuk melihat panduan lengkap
-        </p>
-      </div>
+   <!-- Ganti bagian Services Grid Section -->
+<section class="w-full px-8 py-8">
+  <div class="text-center mb-8">
+    <h3 class="text-2xl font-bold text-blue-800">Jenis Pelayanan Tersedia</h3>
+    <p class="text-gray-600">
+      Pilih salah satu jenis pelayanan untuk melihat panduan lengkap
+    </p>
+  </div>
 
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12"
-      >
-        <!-- Service 1 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="0"
-          onclick="showServiceInfo('Surat Izin Pelayaran (SIPI)')"
-        >
-          <div class="text-center">
-            <i class="fas fa-ship service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">
-              Surat Izin Pelayaran (SIPI)
-            </h4>
-            <p class="text-gray-600 text-sm">
-              Izin pelayaran untuk kapal berbendera Indonesia
-            </p>
-          </div>
-        </div>
-
-        <!-- Service 2 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="1"
-          onclick="showServiceInfo('SIKPI')"
-        >
-          <div class="text-center">
-            <i class="fas fa-fish service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">SIKPI</h4>
-            <p class="text-gray-600 text-sm">
-              Surat Izin Kapal Pengangkut Ikan
-            </p>
-          </div>
-        </div>
-
-        <!-- Service 3 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="2"
-          onclick="showServiceInfo('Sertifikat Kelaikan')"
-        >
-          <div class="text-center">
-            <i class="fas fa-certificate service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">
-              Sertifikat Kelaikan
-            </h4>
-            <p class="text-gray-600 text-sm">Sertifikat kondisi teknis kapal</p>
-          </div>
-        </div>
-
-        <!-- Service 4 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="3"
-          onclick="showServiceInfo('Izin Berlabuh')"
-        >
-          <div class="text-center">
-            <i class="fas fa-anchor service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">Izin Berlabuh</h4>
-            <p class="text-gray-600 text-sm">
-              Izin untuk kapal berlabuh di perairan pelabuhan
-            </p>
-          </div>
-        </div>
-
-        <!-- Service 5 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="4"
-          onclick="showServiceInfo('Izin Tambat')"
-        >
-          <div class="text-center">
-            <i class="fas fa-dock service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">Izin Tambat</h4>
-            <p class="text-gray-600 text-sm">
-              Izin untuk kapal tambat di dermaga
-            </p>
-          </div>
-        </div>
-
-        <!-- Service 6 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="5"
-          onclick="showServiceInfo('Kapal Asing')"
-        >
-          <div class="text-center">
-            <i class="fas fa-globe-americas service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">Kapal Asing</h4>
-            <p class="text-gray-600 text-sm">
-              Izin masuk pelabuhan untuk kapal asing
-            </p>
-          </div>
-        </div>
-
-        <!-- Service 7 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="6"
-          onclick="showServiceInfo('Surat Laut')"
-        >
-          <div class="text-center">
-            <i class="fas fa-file-alt service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">Surat Laut</h4>
-            <p class="text-gray-600 text-sm">Dokumen kebangsaan kapal</p>
-          </div>
-        </div>
-
-        <!-- Service 8 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="7"
-          onclick="showServiceInfo('Izin Sandar')"
-        >
-          <div class="text-center">
-            <i class="fas fa-ship service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">Izin Sandar</h4>
-            <p class="text-gray-600 text-sm">Izin sandar kapal di dermaga</p>
-          </div>
-        </div>
-
-        <!-- Service 9 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="8"
-          onclick="showServiceInfo('Bongkar Muat')"
-        >
-          <div class="text-center">
-            <i class="fas fa-boxes service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">Bongkar Muat</h4>
-            <p class="text-gray-600 text-sm">
-              Izin kegiatan bongkar muat barang
-            </p>
-          </div>
-        </div>
-
-        <!-- Service 10 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="9"
-          onclick="showServiceInfo('Laporan Kejadian')"
-        >
-          <div class="text-center">
-            <i class="fas fa-exclamation-triangle service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">
-              Laporan Kejadian
-            </h4>
-            <p class="text-gray-600 text-sm">
-              Pelaporan insiden di kapal/pelabuhan
-            </p>
-          </div>
-        </div>
-
-        <!-- Service 11 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="10"
-          onclick="showServiceInfo('Kapal Wisata')"
-        >
-          <div class="text-center">
-            <i class="fas fa-sailboat service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">Kapal Wisata</h4>
-            <p class="text-gray-600 text-sm">
-              Izin untuk kapal layar wisata/nelayan
-            </p>
-          </div>
-        </div>
-
-        <!-- Service 12 -->
-        <div
-          class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent"
-          data-index="11"
-          onclick="showServiceInfo('Surat Tugas ABK')"
-        >
-          <div class="text-center">
-            <i class="fas fa-users service-icon"></i>
-            <h4 class="font-bold text-lg mb-2 text-blue-800">
-              Surat Tugas ABK
-            </h4>
-            <p class="text-gray-600 text-sm">Surat tugas pengawakan kapal</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modal for Service Guide -->
-    <div
-      id="service-modal"
-      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
-    >
-      <div class="bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto">
-        <h2 class="text-2xl font-bold mb-4" id="modal-title">
-          Surat Izin Pelayaran (SIPI)
-        </h2>
-        <div id="modal-content" class="mb-4"></div>
-        <button
-          onclick="closeModal()"
-          class="mt-4 bg-blue-600 text-white px-4 py-2 rounded"
-        >
-          Tutup
-        </button>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('Pengurusan Buku Pelaut Baru')">
+      <div class="text-center">
+        <i class="fas fa-id-badge service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">Pengurusan Buku Pelaut Baru</h4>
+        <p class="text-gray-600 text-sm">Pengajuan buku pelaut baru</p>
       </div>
     </div>
+
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('Pengurusan Buku Pelaut Merah')">
+      <div class="text-center">
+        <i class="fas fa-book service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">Pengurusan Buku Pelaut Merah</h4>
+        <p class="text-gray-600 text-sm">Buku pelaut untuk pelaut asing atau khusus</p>
+      </div>
+    </div>
+
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('Perpanjangan Buku Pelaut')">
+      <div class="text-center">
+        <i class="fas fa-redo service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">Perpanjangan Buku Pelaut</h4>
+        <p class="text-gray-600 text-sm">Memperpanjang masa berlaku buku pelaut</p>
+      </div>
+    </div>
+
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('Penggantian Buku Pelaut')">
+      <div class="text-center">
+        <i class="fas fa-sync-alt service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">Penggantian Buku Pelaut</h4>
+        <p class="text-gray-600 text-sm">Untuk buku pelaut yang rusak atau hilang</p>
+      </div>
+    </div>
+
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('Pengurusan Masalayar')">
+      <div class="text-center">
+        <i class="fas fa-water service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">Pengurusan Masalayar</h4>
+        <p class="text-gray-600 text-sm">Persiapan dokumen pelaut untuk berlayar</p>
+      </div>
+    </div>
+
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('Pengurusan SKK 60 Mil')">
+      <div class="text-center">
+        <i class="fas fa-certificate service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">Pengurusan SKK 60 Mil</h4>
+        <p class="text-gray-600 text-sm">Surat Keterangan Kecakapan pelaut 60 mil</p>
+      </div>
+    </div>
+
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('Pengurusan JMPR/MPR')">
+      <div class="text-center">
+        <i class="fas fa-user-check service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">Pengurusan JMPR/MPR</h4>
+        <p class="text-gray-600 text-sm">Jaminan atau Mutasi Pelaut</p>
+      </div>
+    </div>
+
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('Pengurusan Safe Manning')">
+      <div class="text-center">
+        <i class="fas fa-users-cog service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">Pengurusan Safe Manning</h4>
+        <p class="text-gray-600 text-sm">Minimal awak kapal sesuai regulasi</p>
+      </div>
+    </div>
+
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('SID')">
+      <div class="text-center">
+        <i class="fas fa-id-card service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">SID</h4>
+        <p class="text-gray-600 text-sm">Seafarer's Identity Document</p>
+      </div>
+    </div>
+
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('PKL (Perjanjian Kerja Laut)')">
+      <div class="text-center">
+        <i class="fas fa-handshake service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">PKL</h4>
+        <p class="text-gray-600 text-sm">Perjanjian kerja laut antara pelaut dan pemilik kapal</p>
+      </div>
+    </div>
+
+    <div class="service-card bg-white rounded-lg shadow-md p-6 cursor-pointer transition-transform duration-300 hover:border-blue-500 border-2 border-transparent" onclick="showServiceInfo('Penyijilan')">
+      <div class="text-center">
+        <i class="fas fa-stamp service-icon"></i>
+        <h4 class="font-bold text-lg mb-2 text-blue-800">Penyijilan</h4>
+        <p class="text-gray-600 text-sm">Proses legalisasi dokumen pelaut</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Modal for Service Guide -->
+    <!-- Modal for Service Guide -->
+<div
+  id="service-modal"
+  class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+>
+  <div class="bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto">
+    <h2 class="text-2xl font-bold mb-4" id="modal-title"></h2>
+    <div id="modal-content" class="mb-4"></div>
+    <button
+      onclick="closeModal()"
+      class="mt-4 bg-blue-600 text-white px-4 py-2 rounded"
+    >
+      Tutup
+    </button>
+  </div>
+</div>
+
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
@@ -349,51 +254,265 @@
       </div>
     </footer>
 
-    <script>
+   <script>
   function showServiceInfo(serviceName) {
     const modal = document.getElementById("service-modal");
     const modalTitle = document.getElementById("modal-title");
     const modalContent = document.getElementById("modal-content");
 
-    // Set title
     modalTitle.innerText = serviceName;
 
-    // Set same content for all services
-    modalContent.innerHTML = `
-      <h3 class="font-semibold">Tujuan</h3>
-      <p>Izin pelayaran untuk kapal berbendera Indonesia yang digunakan untuk kegiatan pelayaran di perairan Indonesia.</p>
+    let content = "";
 
-      <h3 class="font-semibold mt-3">Persyaratan</h3>
-      <ul class="list-disc list-inside">
-          <li>Salinan dokumen kapal (BPKB, STNK, dll.)</li>
-          <li>Surat permohonan dari pemilik kapal</li>
-          <li>Dokumen identitas pemohon</li>
-          <li>Surat keterangan dari pihak terkait (jika diperlukan)</li>
-      </ul>
+    switch (serviceName) {
+      case "Pengurusan Buku Pelaut Baru":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Penerbitan buku pelaut untuk pelaut yang belum pernah memiliki buku pelaut sebelumnya.</p>
 
-      <h3 class="font-semibold mt-3">Prosedur</h3>
-      <ol class="list-decimal list-inside">
-          <li>Siapkan semua dokumen yang diperlukan.</li>
-          <li>Ajukan permohonan ke Kantor kesyahbandaran.</li>
-          <li>Petugas akan memverifikasi dokumen.</li>
-          <li>Jika semua dokumen lengkap, izin akan diterbitkan.</li>
-      </ol>
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>Fotokopi KTP</li>
+              <li>Pas foto 4x6 latar biru</li>
+              <li>Sertifikat BST</li>
+              <li>Surat keterangan sehat</li>
+          </ul>
 
-      <h3 class="font-semibold mt-3">Kontak</h3>
-      <p>Untuk informasi lebih lanjut, silakan hubungi:</p>
-      <p>Telepon: (0411) 1234567</p>
-      <p>Email: kesyahbandaran.makassar@kemenhub.go.id</p>
-    `;
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Mengisi formulir permohonan</li>
+              <li>Menyerahkan dokumen ke loket</li>
+              <li>Verifikasi oleh petugas</li>
+              <li>Penerbitan buku pelaut</li>
+          </ol>
+        `;
+        break;
 
-    // Show the modal
+      case "Pengurusan Buku Pelaut Merah":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Penerbitan buku pelaut khusus atau pelaut asing (buku pelaut merah).</p>
+
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>Dokumen identitas diri (WNA/WNI)</li>
+              <li>Surat permohonan dari perusahaan</li>
+              <li>Pas foto berwarna</li>
+          </ul>
+
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Pengajuan ke kantor Syahbandar</li>
+              <li>Verifikasi data oleh petugas</li>
+              <li>Penerbitan buku pelaut merah</li>
+          </ol>
+        `;
+        break;
+
+      case "Perpanjangan Buku Pelaut":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Memperpanjang masa berlaku buku pelaut yang sudah habis.</p>
+
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>Buku pelaut lama</li>
+              <li>Sertifikat BST terbaru</li>
+              <li>Pas foto 4x6</li>
+          </ul>
+
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Serahkan dokumen ke loket pelayanan</li>
+              <li>Proses verifikasi</li>
+              <li>Penerbitan buku pelaut yang diperpanjang</li>
+          </ol>
+        `;
+        break;
+
+      case "Penggantian Buku Pelaut":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Penggantian buku pelaut yang hilang, rusak, atau penuh.</p>
+
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>Surat kehilangan dari kepolisian (jika hilang)</li>
+              <li>Buku pelaut lama (jika rusak/penuh)</li>
+              <li>Pas foto</li>
+          </ul>
+
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Isi formulir penggantian</li>
+              <li>Verifikasi petugas</li>
+              <li>Penerbitan buku pengganti</li>
+          </ol>
+        `;
+        break;
+
+      case "Pengurusan Masalayar":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Persiapan dan pengesahan dokumen untuk pelaut yang akan berlayar.</p>
+
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>PKL (Perjanjian Kerja Laut)</li>
+              <li>Buku pelaut</li>
+              <li>SID</li>
+          </ul>
+
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Pendaftaran dan pengajuan dokumen</li>
+              <li>Verifikasi dan validasi data</li>
+              <li>Pengesahan oleh petugas</li>
+          </ol>
+        `;
+        break;
+
+      case "Pengurusan SKK 60 Mil":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Pengajuan Surat Keterangan Kecakapan untuk pelayaran sampai 60 mil laut.</p>
+
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>KTP</li>
+              <li>Buku pelaut</li>
+              <li>Pas foto</li>
+              <li>Sertifikat pelatihan</li>
+          </ul>
+
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Pengajuan permohonan SKK</li>
+              <li>Uji kompetensi (jika diperlukan)</li>
+              <li>Penerbitan SKK</li>
+          </ol>
+        `;
+        break;
+
+      case "Pengurusan JMPR/MPR":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Pengajuan jaminan mutasi pelaut resmi.</p>
+
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>Surat permohonan dari perusahaan</li>
+              <li>Data pelaut</li>
+              <li>PKL dan buku pelaut</li>
+          </ul>
+
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Ajukan ke loket pelayanan</li>
+              <li>Verifikasi dan validasi oleh petugas</li>
+              <li>Penerbitan surat mutasi</li>
+          </ol>
+        `;
+        break;
+
+      case "Pengurusan Safe Manning":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Menentukan jumlah minimal awak kapal sesuai regulasi.</p>
+
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>Data kapal dan rute</li>
+              <li>Struktur awak kapal</li>
+              <li>Permohonan resmi</li>
+          </ul>
+
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Pengajuan dokumen kapal</li>
+              <li>Evaluasi kebutuhan awak</li>
+              <li>Penerbitan Safe Manning Certificate</li>
+          </ol>
+        `;
+        break;
+
+      case "SID":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Penerbitan Seafarer's Identity Document bagi pelaut.</p>
+
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>KTP dan Buku Pelaut</li>
+              <li>Sertifikat pelaut</li>
+              <li>Pas foto</li>
+          </ul>
+
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Pengisian formulir online/offline</li>
+              <li>Verifikasi dokumen</li>
+              <li>Pencetakan dan pengambilan SID</li>
+          </ol>
+        `;
+        break;
+
+      case "PKL (Perjanjian Kerja Laut)":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Pembuatan kontrak kerja antara pelaut dan perusahaan pemilik kapal.</p>
+
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>Buku pelaut</li>
+              <li>Identitas pelaut dan perusahaan</li>
+              <li>Kontrak kerja yang disetujui</li>
+          </ul>
+
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Pendaftaran PKL</li>
+              <li>Pengesahan oleh Syahbandar</li>
+              <li>Penyerahan salinan PKL</li>
+          </ol>
+        `;
+        break;
+
+      case "Penyijilan":
+        content = `
+          <h3 class="font-semibold">Tujuan</h3>
+          <p>Pengesahan atau legalisasi dokumen pelaut atau kapal.</p>
+
+          <h3 class="font-semibold mt-3">Persyaratan</h3>
+          <ul class="list-disc list-inside">
+              <li>Dokumen yang akan disijil</li>
+              <li>Surat permohonan</li>
+              <li>Identitas pemohon</li>
+          </ul>
+
+          <h3 class="font-semibold mt-3">Prosedur</h3>
+          <ol class="list-decimal list-inside">
+              <li>Serahkan dokumen ke loket penyijilan</li>
+              <li>Petugas melakukan pengecekan</li>
+              <li>Dokumen disijil dan dikembalikan</li>
+          </ol>
+        `;
+        break;
+
+      default:
+        content = "<p>Informasi layanan belum tersedia.</p>";
+        break;
+    }
+
+    modalContent.innerHTML = content;
     modal.classList.remove("hidden");
   }
 
   function closeModal() {
-    const modal = document.getElementById("service-modal");
-    modal.classList.add("hidden");
+    document.getElementById("service-modal").classList.add("hidden");
   }
 </script>
+
 
   </body>
 </html>
