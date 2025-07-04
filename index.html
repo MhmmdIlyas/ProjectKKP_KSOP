@@ -8,7 +8,6 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- Swiper JS -->
-     
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
@@ -25,6 +24,24 @@
         left: 0;
         width: 100%;
         height: 100%;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #253246;
+        /* Tailwind blue-500 */
+        width: 20px;
+        height: 20px;
+        transform: scale(0.75);
+        /* perkecil */
+      }
+
+      @media (min-width: 768px) {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          transform: scale(0.5);
+        }
       }
 
       .step-item:not(:last-child):after {
@@ -57,17 +74,23 @@
         color: #3b82f6;
         /* Tailwind's blue-600 */
       }
- ul.list-rapi {
-    list-style-type: disc;
-    list-style-position: outside;
-    padding-left: 1.5em; /* jarak bullet dari kiri */
-  }
 
-  ul.list-rapi li {
-    padding-left: 0.5em; /* jarak teks dari bullet */
-    text-indent: -0.05em; /* agar baris kedua sejajar dengan baris pertama */
-    margin-bottom: 0.5em; /* beri jarak antar item */
-  }
+      ul.list-rapi {
+        list-style-type: disc;
+        list-style-position: outside;
+        padding-left: 1.5em;
+        /* jarak bullet dari kiri */
+      }
+
+      ul.list-rapi li {
+        padding-left: 0.5em;
+        /* jarak teks dari bullet */
+        text-indent: -0.05em;
+        /* agar baris kedua sejajar dengan baris pertama */
+        margin-bottom: 0.5em;
+        /* beri jarak antar item */
+      }
+      
     </style>
   </head>
   <body class="bg-gray-50 font-sans">
@@ -87,36 +110,33 @@
     </header>
     <!-- Hero Section -->
     <!-- Carousel Section -->
- <div class="swiper mySwiper relative z-0 overflow-hidden">
-  <div class="swiper-wrapper">
-    <!-- Slide 1 -->
-    <section class="swiper-slide h-[200px] md:h-[250px] relative z-0 bg-[url('https://hubla.dephub.go.id/hubla/assets/img/footer-bg.png')] bg-cover bg-center text-white flex items-center justify-center py-5 px-4 transition-all duration-700 ease-in-out">
-      <div class="absolute inset-0 bg-blue-900/60"></div>
-      <div class="relative container mx-auto text-center">
-        <h2 class="text-xl md:text-2xl font-bold mb-2">PANDUAN PELAYANAN ADMINISTRASI PERKAPALAN DAN KEPELAUTAN</h2>
-        <p class="max-w-xl mx-auto text-blue-100 text-xs md:text-sm">
-          Berikut panduan lengkap untuk pengurusan dokumen kepelautan dan penyijilan awak kapal pada bidang perkapalan dan kepelautan
-        </p>
+    <div class="swiper mySwiper relative z-0 overflow-hidden">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <section class="swiper-slide relative z-0 bg-[url('https://hubla.dephub.go.id/hubla/assets/img/footer-bg.png')] bg-cover bg-center text-white h-[200px] flex items-center justify-center py-5 px-4 transition-all duration-700 ease-in-out">
+          <div class="absolute inset-0 bg-blue-900/60"></div>
+          <div class="relative container mx-auto text-center">
+            <h2 class="text-xl md:text-2xl font-bold mb-2">PANDUAN PELAYANAN ADMINISTRASI PERKAPALAN DAN KEPELAUTAN</h2>
+            <p class="max-w-xl mx-auto text-blue-100 text-xs md:text-sm"> Berikut panduan lengkap untuk pengurusan Dokumen Kepelautan dan Penyijilan awak kapal pada bidang Seksi Perkapalan dan Kepelautan </p>
+          </div>
+        </section>
+        <!-- Slide 2 -->
+        <!-- Slide 2 -->
+        <section class="swiper-slide relative z-0 bg-[url('https://hubla.dephub.go.id/hubla/assets/img/footer-bg.png')] bg-cover bg-center h-[200px] flex items-center justify-center py-5 px-4 transition-all duration-700 ease-in-out">
+          <div class="absolute inset-0 bg-blue-900/60"></div>
+          <div class="relative container mx-auto flex justify-center">
+            <img src="https://hubla.dephub.go.id/storage/ksopumakassar/images/slider/10480/WzANZQCzTUW3jBhWGlHwl5tiDgRTaALWEOw7uVe4.png" alt="Slide Gambar" class="max-h-[200px] w-auto mx-auto rounded-xl shadow-lg" />
+          </div>
+        </section>
       </div>
-    </section>
-
-    <!-- Slide 2 -->
-    <section class="swiper-slide h-[200px] md:h-[250px] relative z-0 bg-[url('https://hubla.dephub.go.id/hubla/assets/img/footer-bg.png')] bg-cover bg-center flex items-center justify-center py-5 px-4 transition-all duration-700 ease-in-out">
-      <div class="absolute inset-0 bg-blue-900/60"></div>
-      <div class="relative container mx-auto flex justify-center">
-        <img src="https://hubla.dephub.go.id/storage/ksopumakassar/images/slider/10480/WzANZQCzTUW3jBhWGlHwl5tiDgRTaALWEOw7uVe4.png" alt="Slide Gambar" class="max-h-[160px] w-auto mx-auto rounded-xl shadow-lg transition-transform duration-700 hover:scale-105" />
-      </div>
-    </section>
-  </div>
-
-  <!-- Tombol navigasi -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-
-  <!-- Pagination opsional -->
-  <div class="swiper-pagination"></div>
-</div>
-
+      <!-- Tombol navigasi -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Pagination opsional -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Gradasi -->
+    <div class="h-12 md:h-8 bg-gradient-to-b from-blue-900/60 to-white"></div>
     <!-- Services Grid Section -->
     <section class="w-full px-8 py-8">
       <div class="text-center mb-8">
@@ -220,13 +240,13 @@
             <h3 class="text-lg font-semibold mb-4">Kontak</h3>
             <ul class="space-y-2">
               <li class="flex items-center">
-                <i class="fas fa-map-marker-alt mr-3 text-blue-300"></i> Jl. Satando No.55, Makassar, Sulawesi Selatan
+                <i class="fas fa-map-marker-alt mr-3 text-blue-300"></i> Jl. Hatta No.2, Mampu, Kec. Wajo, Kota Makassar, Sulawesi Selatan 90164
               </li>
               <li class="flex items-center">
-                <i class="fas fa-phone-alt mr-3 text-blue-300"></i> (0411) 1234567
+                <i class="fas fa-phone-alt mr-3 text-blue-300"></i> (0411) 3616 444
               </li>
               <li class="flex items-center">
-                <i class="fas fa-envelope mr-3 text-blue-300"></i> ksop_utama.makassar@dephub.go.id
+                <i class="fas fa-envelope mr-3 text-blue-300"></i> ksop_utama.makassar@kemenhub.go.id
               </li>
             </ul>
           </div>
@@ -245,7 +265,7 @@
                 <a href="#" class="hover:text-blue-300">Direktorat Jenderal Perhubungan Laut</a>
               </li>
               <li>
-                <a href="#" class="hover:text-blue-300">Kementerian Perhubungan</a>
+                <a href="https://hubla.dephub.go.id/kopmakassar" class="hover:text-blue-300">Kementerian Perhubungan</a>
               </li>
               <li>
                 <a href="#" class="hover:text-blue-300">Pelabuhan Makassar</a>
@@ -267,33 +287,33 @@
         let content = "";
         switch (serviceName) {
           case "Pengurusan Buku Pelaut Baru":
-            content = `
-          
-			
-			<h3 class="font-semibold">Tujuan</h3>
+            content = `      		
+						<h3 class="font-semibold">Tujuan</h3>
 			<p>Penerbitan buku pelaut untuk pelaut yang belum pernah memiliki buku pelaut sebelumnya.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
-	<ul class="list-rapi">
+			<ul class="list-rapi">
 				<li>Surat Pernyataan Belum Pernah Memiliki BUKU PELAUT</li>
 				<li>Fotocopy Sertifikat Keahlian Pelaut dan atau Sertifikat Keterampilan Pelaut</li>
-        <li>Surat keterangan PRALA bagi TARUNA/I yang akan melaksanakan praktek kerja laut</li>
-        <li>Dokumen asli sertifikat keahlian pelaut atau sertifikat keterampilan pelaut</li>
-        <li>Surat keterangan sehat</li>
-        <li>Surat keterangan catatan kepolisian (SKCK)</li>
-        <li>Fotocopy AKTE KELAHIRAN/Surat kenal lahir/Kartu tanda pendudu (KTP)</li>
+				<li>Surat keterangan PRALA bagi TARUNA/I yang akan melaksanakan praktek kerja laut</li>
+				<li>Dokumen asli sertifikat keahlian pelaut atau sertifikat keterampilan pelaut</li>
+				<li>Surat keterangan sehat</li>
+				<li>Surat keterangan catatan kepolisian (SKCK)</li>
+				<li>Fotocopy AKTE KELAHIRAN/Surat kenal lahir/Kartu tanda pendudu (KTP)</li>
 				<li>Pas Foto ukuran 5x5 dan 3x4 masing masing sebanyak 3 lembar memakai baju putih polos lengan panjang berdasi hitam dengan latar belakang biru atau bagian NAUTIKA (dek) dan merah untuk TEKNIKA (mesin)</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Link Terkait :</h3>
-	<ul class="list-rapi">
-				<li><a href="https://dokumenpelaut.dephub.go.id/" class="text-blue-600">Pendaftaran Buku Pelaut</a></li>
-        <li><a href="https://vt.tiktok.com/ZSB2vuE5V/" class="text-blue-600"</a>Tutorial</li>
+			<ul class="list-rapi">
+				<li>
+					<a href="https://dokumenpelaut.dephub.go.id/" class="text-blue-600">Pendaftaran Buku Pelaut</a>
+				</li>
+				<li>
+					<a href="https://vt.tiktok.com/ZSB2vuE5V/" class="text-blue-600"</a>Tutorial
+				</li>
 			</ul>
         `;
             break;
           case "Pengurusan Buku Pelaut Merah":
             content = `
-          
-			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Penerbitan buku pelaut khusus atau pelaut asing (buku pelaut merah).</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
@@ -303,16 +323,17 @@
 				<li>Pas foto berwarna</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Prosedur</h3>
-			<ol class="list-decimal list-inside">
+			<ul class="list-rapi">
 				<li>Pengajuan ke kantor Syahbandar</li>
 				<li>Verifikasi data oleh petugas</li>
 				<li>Penerbitan buku pelaut merah</li>
-			</ol>
+			</ul>
         `;
             break;
           case "Perpanjangan Buku Pelaut":
             content = `
           
+			
 			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Memperpanjang masa berlaku buku pelaut yang sudah habis.</p>
@@ -334,50 +355,57 @@
             content = `
           
 			
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Penggantian buku pelaut yang hilang, rusak, atau penuh.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
 				<li>Fotocopy Sertifikat Keahlian Pelaut dan atau Sertifikat Keterampilan Pelaut</li>
-         <li>Surat keterangan PRALA bagi TARUNA/I yang akan melaksanakan praktek kerja laut</li>
-        <li>Dokumen asli sertifikat keahlian pelaut atau sertifikat keterampilan pelaut</li>
-        <li>Surat keterangan masa berlayar yang diketahuii syahbandar atau KBRI setempat bagi pelaut yang pernah berlayar</li>
-        <li>Surat keterangan sehat</li>
-        <li>Fotocopy AKTE KELAHIRAN/Surat kenal lahir/Kartu tanda pendudu (KTP)</li>
+				<li>Surat keterangan PRALA bagi TARUNA/I yang akan melaksanakan praktek kerja laut</li>
+				<li>Dokumen asli sertifikat keahlian pelaut atau sertifikat keterampilan pelaut</li>
+				<li>Surat keterangan masa berlayar yang diketahuii syahbandar atau KBRI setempat bagi pelaut yang pernah berlayar</li>
+				<li>Surat keterangan sehat</li>
+				<li>Fotocopy AKTE KELAHIRAN/Surat kenal lahir/Kartu tanda pendudu (KTP)</li>
 				<li>Buku pelaut lama (Asli)</li>
 				<li>Surat kehilangan dari kepolisian apabila buku hilang</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Prosedur</h3>
-			<ol class="list-decimal list-inside">
+			<ul class="list-rapi">
 				<li>Isi formulir penggantian</li>
 				<li>Verifikasi petugas</li>
 				<li>Penerbitan buku pengganti</li>
-			</ol>
+			</ul>
         `;
             break;
           case "Pengurusan Masalayar":
             content = `
           
-			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Persiapan dan pengesahan dokumen untuk pelaut yang akan berlayar.</p>
-			<h3 class="font-semibold mt-3">Persyaratan</h3>
-			<ul class="list-disc list-inside">
-				<li>PKL (Perjanjian Kerja Laut)</li>
-				<li>Buku pelaut</li>
-				<li>SID</li>
+			<h3 class="font-semibold mt-3">Persyaratan :</h3>
+      <h3 class="font-semibold mt-3">Untuk Umum</h3>
+			<ul class="list-rapi">
+				  <li>Surat Permohonan kepada Kantor KSOP Utama Makassar</li>
+          <li>Buku Pelaut Asli yang sudah di Sijil</li>
+          <li>Fotokopi Buku Pelaut</li>
+          <li>Fotokopi Sertifikat Keahlian Pelaut</li>
+          <li>Print Out Sertifikat (Sertifikat Online <a href="https://www.pelaut.dephub.go.id/">www.pelaut.dephub.go.id</a>)</li>
+          <li>Pas Foto 3x4 (2 Lembar) sesuai jurusan Nautika (Biru) / Teknika (Merah)</li>
 			</ul>
-			<h3 class="font-semibold mt-3">Prosedur</h3>
-			<ol class="list-decimal list-inside">
-				<li>Pendaftaran dan pengajuan dokumen</li>
-				<li>Verifikasi dan validasi data</li>
-				<li>Pengesahan oleh petugas</li>
-			</ol>
+			<h3 class="font-semibold mt-3">Untuk Taruna</h3>
+			<ul class="list-rapi">
+				  <li>Surat Permohonan kepada Kantor KSOP Utama Makassar</li>
+          <li>Buku Pelaut Asli</li>
+          <li>Fotokopi Buku Saku Asli dan Fotokopi</li>
+          <li>Surat Mutasi Naik & Turun Asli dan Fotokopi (Mutasi Sekolah dan Perusahaan Pelayaran)</li>
+          <li>Pas Foto 3x4 (2 Lembar) sesuai jurusan Nautika (Biru) / Teknika (Merah)</li>
+			</ul>
         `;
             break;
           case "Pengurusan SKK 60 Mil":
             content = `
           
+			
 			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Pengajuan Surat Keterangan Kecakapan untuk pelayaran sampai 60 mil laut.</p>
@@ -400,6 +428,7 @@
             content = `
           
 			
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Pengajuan jaminan mutasi pelaut resmi.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
@@ -419,6 +448,7 @@
           case "Pengurusan Safe Manning":
             content = `
           
+			
 			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Menentukan jumlah minimal awak kapal sesuai regulasi.</p>
@@ -440,26 +470,26 @@
             content = `
           
 			
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Penerbitan Seafarer's Identity Document bagi pelaut.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-disc list-inside">
-				<li>KTP dan Buku Pelaut</li>
+				<li>KTP dan SKCK</li>
 				<li>Sertifikat pelaut</li>
-				<li>Pas foto</li>
+				<li>Surat Pengantar Perusaan</li>
+        <li>NPWP (Opsional)</li>
+        <li>Asusrans i Ketenaga kerjaan</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Prosedur</h3>
 			<ol class="list-decimal list-inside">
-				<li>Pengisian formulir online/offline</li>
-				<li>Verifikasi dokumen</li>
-				<li>Pencetakan dan pengambilan SID</li>
+				<li><a href="https://e-sid.dephub.go.id/login" class="text-blue-600">Link Pendaftaran</a>
+        <li><a href="https://vt.tiktok.com/ZSBhPWXLP/" class="text-blue-600">Panduan</a>
 			</ol>
         `;
             break;
           case "PKL (Perjanjian Kerja Laut)":
             content = `
-          
-			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Pembuatan kontrak kerja antara pelaut dan perusahaan pemilik kapal.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
@@ -480,16 +510,17 @@
             content = `
           
 			
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Pengesahan atau legalisasi dokumen pelaut atau kapal.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
-	<ul class="list-rapi">
+			<ul class="list-rapi">
 				<li>Surat permohonan kepada Kesyahbandaran dan Otoritas Pelabuhan Utama Makassar</li>
 				<li>Fotocopy perjanjian kerja laut (PKL)</li>
 				<li>Daftar Crew List</li>
-        <li>Buku pelaut asli</li>
-        <li>Surat kesehatan pelaut</li>
-        <li>Surat pengantar perusahaan/mutasi</li>
+				<li>Buku pelaut asli</li>
+				<li>Surat kesehatan pelaut</li>
+				<li>Surat pengantar perusahaan/mutasi</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Prosedur</h3>
 			<ol class="list-decimal list-inside">
@@ -513,20 +544,20 @@
         document.getElementById("service-modal").classList.add("hidden");
         document.body.style.overflow = "auto"; // buka kembali scroll halaman
       }
-   const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    speed: 600,
-    effect: "slide", // Efek geser aman dan halus
-    autoplay: false,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        speed: 600,
+        effect: "slide", // Efek geser aman dan halus
+        autoplay: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
   </body>
 </html>
