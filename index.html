@@ -90,7 +90,6 @@
         margin-bottom: 0.5em;
         /* beri jarak antar item */
       }
-      
     </style>
   </head>
   <body class="bg-gray-50 font-sans">
@@ -108,8 +107,6 @@
         </div>
       </div>
     </header>
-    <!-- Hero Section -->
-    <!-- Carousel Section -->
     <div class="swiper mySwiper relative z-0 overflow-hidden">
       <div class="swiper-wrapper">
         <!-- Slide 1 -->
@@ -223,7 +220,6 @@
       </div>
     </section>
     <!-- Modal for Service Guide -->
-    <!-- Modal for Service Guide -->
     <div id="service-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
       <div class="bg-white rounded-lg shadow-lg p-6 max-w-lg mx-auto">
         <h2 class="text-2xl font-bold mb-4" id="modal-title"></h2>
@@ -245,10 +241,9 @@
                 <i class="fas fa-phone-alt mr-3 text-blue-300"></i> (0411) 3616 444
               </li>
               <li class="flex items-center">
-  <a href="mailto:ksop_utama.makassar@kemenhub.go.id" class="flex items-center text-blue-300 hover:underline">
-    <i class="fas fa-envelope mr-3"></i> ksop_utama.makassar@kemenhub.go.id
-  </a>
-</li>
+                <a href="mailto:ksop_utama.makassar@kemenhub.go.id" class="flex items-center text-blue-300 hover:underline">
+                  <i class="fas fa-envelope mr-3"></i> ksop_utama.makassar@kemenhub.go.id </a>
+              </li>
             </ul>
           </div>
           <div>
@@ -289,7 +284,8 @@
         switch (serviceName) {
           case "Pengurusan Buku Pelaut Baru":
             content = `      		
-						<h3 class="font-semibold">Tujuan</h3>
+						
+			<h3 class="font-semibold">Tujuan</h3>
 			<p>Penerbitan buku pelaut untuk pelaut yang belum pernah memiliki buku pelaut sebelumnya.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
@@ -309,33 +305,36 @@
 				</li>
 				<li>
 					<a href="https://vt.tiktok.com/ZSB2vuE5V/" class="text-blue-600"</a>Tutorial
+				
 				</li>
 			</ul>
         `;
             break;
           case "Pengurusan Buku Pelaut Merah":
             content = `
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Penerbitan buku pelaut khusus atau pelaut asing (buku pelaut merah).</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
 				<li>Surat pernyataan belum pernah memiliki buku pelaut merah</li>
-        <li>Fotocopy KTP</li>
+				<li>Fotocopy KTP</li>
 				<li>Surat keterangan sehat dari Rumah Sakit/Puskesmas</li>
-        <li>Sertifikat Pelaut (BST-KLM/SKK/MPR/JMPR)</li>
+				<li>Sertifikat Pelaut (BST-KLM/SKK/MPR/JMPR)</li>
 				<li>Pas foto berwarna terbaru berlatar belakang warna biru, ukuran 3x4 dan 2x3 masing masing 2 lembar</li>
 			</ul>
         `;
             break;
           case "Perpanjangan Buku Pelaut":
             content = `
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Memperpanjang masa berlaku buku pelaut yang sudah habis (Biaya dikenakan 10.000).</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
 				<li>Buku pelaut lama</li>
-        <li>Salinan sertifikat keahlian pelaut</li>
-        <li>Surat keterangan sehat</li>
+				<li>Salinan sertifikat keahlian pelaut</li>
+				<li>Surat keterangan sehat</li>
 				<li>Salinan KTP</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Prosedur</h3>
@@ -348,6 +347,7 @@
             break;
           case "Penggantian Buku Pelaut":
             content = `
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Penggantian buku pelaut yang hilang, rusak, atau penuh.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
@@ -371,82 +371,88 @@
             break;
           case "Pengurusan Masalayar":
             content = `
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Persiapan dan pengesahan dokumen untuk pelaut yang akan berlayar.</p>
 			<h3 class="font-semibold mt-3">Persyaratan :</h3>
-      <h3 class="font-semibold mt-3">Untuk Umum</h3>
+			<h3 class="font-semibold mt-3">Untuk Umum</h3>
 			<ul class="list-rapi">
-				  <li>Surat Permohonan kepada Kantor KSOP Utama Makassar</li>
-          <li>Buku Pelaut Asli yang sudah di Sijil</li>
-          <li>Fotokopi Buku Pelaut</li>
-          <li>Fotokopi Sertifikat Keahlian Pelaut</li>
-          <li>Print Out Sertifikat (Sertifikat Online <a href="https://www.pelaut.dephub.go.id/">www.pelaut.dephub.go.id</a>)</li>
-          <li>Pas Foto 3x4 (2 Lembar) sesuai jurusan Nautika (Biru) / Teknika (Merah)</li>
+				<li>Surat Permohonan kepada Kantor KSOP Utama Makassar</li>
+				<li>Buku Pelaut Asli yang sudah di Sijil</li>
+				<li>Fotokopi Buku Pelaut</li>
+				<li>Fotokopi Sertifikat Keahlian Pelaut</li>
+				<li>Print Out Sertifikat (Sertifikat Online 
+					<a href="https://www.pelaut.dephub.go.id/">www.pelaut.dephub.go.id</a>)
+				</li>
+				<li>Pas Foto 3x4 (2 Lembar) sesuai jurusan Nautika (Biru) / Teknika (Merah)</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Untuk Taruna</h3>
 			<ul class="list-rapi">
-				  <li>Surat Permohonan kepada Kantor KSOP Utama Makassar</li>
-          <li>Buku Pelaut Asli</li>
-          <li>Fotokopi Buku Saku Asli dan Fotokopi</li>
-          <li>Surat Mutasi Naik & Turun Asli dan Fotokopi (Mutasi Sekolah dan Perusahaan Pelayaran)</li>
-          <li>Pas Foto 3x4 (2 Lembar) sesuai jurusan Nautika (Biru) / Teknika (Merah)</li>
+				<li>Surat Permohonan kepada Kantor KSOP Utama Makassar</li>
+				<li>Buku Pelaut Asli</li>
+				<li>Fotokopi Buku Saku Asli dan Fotokopi</li>
+				<li>Surat Mutasi Naik & Turun Asli dan Fotokopi (Mutasi Sekolah dan Perusahaan Pelayaran)</li>
+				<li>Pas Foto 3x4 (2 Lembar) sesuai jurusan Nautika (Biru) / Teknika (Merah)</li>
 			</ul>
         `;
             break;
           case "Pengurusan SKK 60 Mil":
             content = `
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Pengajuan Surat Keterangan Kecakapan untuk pelayaran sampai 60 mil laut.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
 				<li>Fotocopy KTP/Akte Lahir</li>
 				<li>SKCK</li>
-        <li>Surat Keterangan Sehat dari Rumah Sakit atau Puskesmas</li>
-        <li>Surat pernyataan bermaterai</li>
-        <li>Pembayaran PNBP</li>
+				<li>Surat Keterangan Sehat dari Rumah Sakit atau Puskesmas</li>
+				<li>Surat pernyataan bermaterai</li>
+				<li>Pembayaran PNBP</li>
 				<li>Pas foto ukuran 3x4 3 lembar Latarbelakang biru untuk deck Latarbelakang merah untuk mesin</li>
 			</ul>
         `;
             break;
           case "Pengurusan JMPR/MPR":
             content = `
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Pengajuan jaminan mutasi pelaut resmi.</p>
-      <h3 class="font-semibold text-xl mt-5">Persyaratan</h3>
+			<h3 class="font-semibold text-xl mt-5">Persyaratan</h3>
 			<h4 class="font-semibold mt-3">A. MPR Tk.I dan Tk.II</h4>
-<ul class="list-rapi">
-    <li>Surat Permohonan;</li>
-  <li>Sehat Jasmani dan Rohani;</li>
-  <li>Berusia Sekurangnya 18 Tahun (JMPR Tk.II);</li>
-  <li>Berusia Sekurangnya 20 Tahun (JMPR Tk.I);</li>
-  <li>Memiliki Masa Layar Sekurangnya 2 Tahun pada Kamar Mesin dengan Mesin Penggerak Bantu (JMPR Tk.II);</li>
-  <li>Memiliki Surat Kecakapan JMPR Tk.II dengan berlayar sekurangnya 2 Tahun (JMPR Tk.I);</li>
-  <li>Dokumen Pendukung Lainnya.</li>
- 
-</ul>
-
-<h4 class="font-semibold mt-3">B. JMPR Tk.I dan Tk.II</h4>
-<ul class="list-rapi">
- <li>Surat Permohonan;</li>
-  <li>Sehat Jasmani dan Rohani;</li>
-  <li>Berusia Sekurangnya 18 Tahun (MPR Tk.II);</li>
-  <li>Berusia Sekurangnya 20 Tahun (MPR Tk.I);</li>
-  <li>Memiliki Masa Layar Sekurangnya 2 Tahun pada Ukuran Kapal GT &gt;100 (MPR Tk.II);</li>
-  <li>Memiliki Surat Kecakapan MPR Tk.II dengan berlayar sekurangnya 2 Tahun (MPR Tk.I);</li>
-  <li>Dokumen Pendukung Lainnya.</li>
-</ul>
+			<ul class="list-rapi">
+				<li>Surat Permohonan;</li>
+				<li>Sehat Jasmani dan Rohani;</li>
+				<li>Berusia Sekurangnya 18 Tahun (JMPR Tk.II);</li>
+				<li>Berusia Sekurangnya 20 Tahun (JMPR Tk.I);</li>
+				<li>Memiliki Masa Layar Sekurangnya 2 Tahun pada Kamar Mesin dengan Mesin Penggerak Bantu (JMPR Tk.II);</li>
+				<li>Memiliki Surat Kecakapan JMPR Tk.II dengan berlayar sekurangnya 2 Tahun (JMPR Tk.I);</li>
+				<li>Dokumen Pendukung Lainnya.</li>
+			</ul>
+			<h4 class="font-semibold mt-3">B. JMPR Tk.I dan Tk.II</h4>
+			<ul class="list-rapi">
+				<li>Surat Permohonan;</li>
+				<li>Sehat Jasmani dan Rohani;</li>
+				<li>Berusia Sekurangnya 18 Tahun (MPR Tk.II);</li>
+				<li>Berusia Sekurangnya 20 Tahun (MPR Tk.I);</li>
+				<li>Memiliki Masa Layar Sekurangnya 2 Tahun pada Ukuran Kapal GT &gt;100 (MPR Tk.II);</li>
+				<li>Memiliki Surat Kecakapan MPR Tk.II dengan berlayar sekurangnya 2 Tahun (MPR Tk.I);</li>
+				<li>Dokumen Pendukung Lainnya.</li>
+			</ul>
         `;
             break;
           case "Pengurusan Safe Manning":
             content = `
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Menentukan jumlah minimal awak kapal sesuai regulasi.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
 				<li>Surat permohonan dari pemilik, Nahkoda, dan atau keagenan kapal</li>
-				<li>Melampirkan dokumen <i>safe manning</i> terakhir</li>
+				<li>Melampirkan dokumen 
+					<i>safe manning</i> terakhir
+				</li>
 				<li>Menunjukkan ijasah asli dan endorsement serta sertifikat pendukung lainnya</li>
-        <li>Fotokopi sertifikat konstruksi kapal</li>
+				<li>Fotokopi sertifikat konstruksi kapal</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Prosedur</h3>
 			<ul class="list-rapi">
@@ -458,6 +464,7 @@
             break;
           case "SID":
             content = `
+			
 			<h3 class="font-semibold">Tujuan</h3>
 			<p>Penerbitan Seafarer's Identity Document bagi pelaut.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
@@ -465,56 +472,60 @@
 				<li>KTP dan SKCK</li>
 				<li>Sertifikat pelaut</li>
 				<li>Surat Pengantar Perusaan</li>
-        <li>NPWP (Opsional)</li>
-        <li>Asusrans i Ketenaga kerjaan</li>
+				<li>NPWP (Opsional)</li>
+				<li>Asusransi Ketenaga kerjaan</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Prosedur</h3>
 			<ol class="list-decimal list-inside">
-				<li><a href="https://e-sid.dephub.go.id/login" class="text-blue-600">Link Pendaftaran</a>
-        <li><a href="https://vt.tiktok.com/ZSBhPWXLP/" class="text-blue-600">Panduan</a>
-			</ol>
+				<li>
+					<a href="https://e-sid.dephub.go.id/login" class="text-blue-600">Link Pendaftaran</a>
+					<li>
+						<a href="https://vt.tiktok.com/ZSBhPWXLP/" class="text-blue-600">Panduan</a>
+					</ol>
         `;
             break;
           case "PKL (Perjanjian Kerja Laut)":
             content = `
-			<h3 class="font-semibold">Tujuan</h3>
-			<p>Pembuatan kontrak kerja antara pelaut dan perusahaan pemilik kapal.</p>
-			<h3 class="font-semibold mt-3">Persyaratan</h3>
-			<ul class="list-rapi">
-				<li>Surat permohonan dari pemilik dan keagenan kapal</li>
-        <li>Surat kuasa penunjukan perekrutan awak kapal</li>
-        <li>Fotokopi Kartu Tanda Penduduk(KTP)</li>
-        <li>Fotokopi Safe Manning</li>
-        <li>Fotokopi Ijasah Pelaut</li>
-        <li>Surat Pernyataan Kebenaran Dokumen</li>
-			</ul>
-			<h3 class="font-semibold mt-3">Prosedur</h3>
-			<ul class="list-rapi">
-				<li>Mengajukan surat Permohonan Verifikasi Perjanjian Kerja Laut (PKL)</li>
-				<li>Pengesahan oleh Syahbandar</li>
-				<li>Penyerahan salinan PKL</li>
-			</ul>
+			
+					<h3 class="font-semibold">Tujuan</h3>
+					<p>Pembuatan kontrak kerja antara pelaut dan perusahaan pemilik kapal.</p>
+					<h3 class="font-semibold mt-3">Persyaratan</h3>
+					<ul class="list-rapi">
+						<li>Surat permohonan dari pemilik dan keagenan kapal</li>
+						<li>Surat kuasa penunjukan perekrutan awak kapal</li>
+						<li>Fotokopi Kartu Tanda Penduduk(KTP)</li>
+						<li>Fotokopi Safe Manning</li>
+						<li>Fotokopi Ijasah Pelaut</li>
+						<li>Surat Pernyataan Kebenaran Dokumen</li>
+					</ul>
+					<h3 class="font-semibold mt-3">Prosedur</h3>
+					<ul class="list-rapi">
+						<li>Mengajukan surat Permohonan Verifikasi Perjanjian Kerja Laut (PKL)</li>
+						<li>Pengesahan oleh Syahbandar</li>
+						<li>Penyerahan salinan PKL</li>
+					</ul>
         `;
             break;
           case "Penyijilan":
             content = `
-			<h3 class="font-semibold">Tujuan</h3>
-			<p>Pengesahan atau legalisasi dokumen pelaut atau kapal.</p>
-			<h3 class="font-semibold mt-3">Persyaratan</h3>
-			<ul class="list-rapi">
-				<li>Surat permohonan kepada Kesyahbandaran dan Otoritas Pelabuhan Utama Makassar</li>
-				<li>Fotocopy perjanjian kerja laut (PKL)</li>
-				<li>Daftar Crew List</li>
-				<li>Buku pelaut asli</li>
-				<li>Surat kesehatan pelaut</li>
-				<li>Surat pengantar perusahaan/mutasi</li>
-			</ul>
-			<h3 class="font-semibold mt-3">Prosedur</h3>
-			<ol class="list-decimal list-inside">
-				<li>Serahkan dokumen ke loket penyijilan</li>
-				<li>Petugas melakukan pengecekan</li>
-				<li>Dokumen disijil dan dikembalikan</li>
-			</ol>
+			
+					<h3 class="font-semibold">Tujuan</h3>
+					<p>Pengesahan atau legalisasi dokumen pelaut atau kapal.</p>
+					<h3 class="font-semibold mt-3">Persyaratan</h3>
+					<ul class="list-rapi">
+						<li>Surat permohonan kepada Kesyahbandaran dan Otoritas Pelabuhan Utama Makassar</li>
+						<li>Fotocopy perjanjian kerja laut (PKL)</li>
+						<li>Daftar Crew List</li>
+						<li>Buku pelaut asli</li>
+						<li>Surat kesehatan pelaut</li>
+						<li>Surat pengantar perusahaan/mutasi</li>
+					</ul>
+					<h3 class="font-semibold mt-3">Prosedur</h3>
+					<ol class="list-decimal list-inside">
+						<li>Serahkan dokumen ke loket penyijilan</li>
+						<li>Petugas melakukan pengecekan</li>
+						<li>Dokumen disijil dan dikembalikan</li>
+					</ol>
         `;
             break;
           default:
@@ -522,19 +533,19 @@
             break;
         }
         modalContent.innerHTML = content;
-        modalContent.classList.add("max-h-[60vh]", "overflow-y-auto"); // tambahkan scroll di dalam modal
-        document.body.style.overflow = "hidden"; // kunci scroll halaman
+        modalContent.classList.add("max-h-[60vh]", "overflow-y-auto");
+        document.body.style.overflow = "hidden";
         modal.classList.remove("hidden");
       }
 
       function closeModal() {
         document.getElementById("service-modal").classList.add("hidden");
-        document.body.style.overflow = "auto"; // buka kembali scroll halaman
+        document.body.style.overflow = "auto";
       }
       const swiper = new Swiper(".mySwiper", {
         loop: true,
         speed: 600,
-        effect: "slide", // Efek geser aman dan halus
+        effect: "slide",
         autoplay: false,
         navigation: {
           nextEl: ".swiper-button-next",
