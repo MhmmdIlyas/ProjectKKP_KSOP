@@ -1,0 +1,66 @@
+.aspect-w-16 {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.aspect-w-16 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #253246;
+  width: 20px;
+  height: 20px;
+  transform: scale(0.75);
+}
+
+@media (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    transform: scale(0.5);
+  }
+}
+
+.step-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 11px;
+  height: 100%;
+  width: 1px;
+  background-color: #cbd5e1;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.active-tab {
+  background-color: #2563eb;
+  color: white;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: #3b82f6;
+}
+
+ul.list-rapi {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.5em;
+}
+
+ul.list-rapi li {
+  padding-left: 0.5em;
+  text-indent: -0.05em;
+  margin-bottom: 0.5em;
+}
