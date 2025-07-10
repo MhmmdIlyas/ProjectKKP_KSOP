@@ -13,12 +13,12 @@ function showServiceInfo(serviceName) {
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
 				<li>Surat Pernyataan Belum Pernah Memiliki BUKU PELAUT</li>
-				<li>Fotocopy Sertifikat Keahlian Pelaut dan atau Sertifikat Keterampilan Pelaut</li>
+				<li>Fotokopi Sertifikat Keahlian Pelaut dan atau Sertifikat Keterampilan Pelaut</li>
 				<li>Surat keterangan PRALA bagi TARUNA/I yang akan melaksanakan praktek kerja laut</li>
 				<li>Dokumen asli sertifikat keahlian pelaut atau sertifikat keterampilan pelaut</li>
 				<li>Surat keterangan sehat</li>
 				<li>Surat keterangan catatan kepolisian (SKCK)</li>
-				<li>Fotocopy AKTE KELAHIRAN/Surat kenal lahir/Kartu tanda pendudu (KTP)</li>
+				<li>Fotokopi AKTE KELAHIRAN/Surat kenal lahir/Kartu tanda pendudu (KTP)</li>
 				<li>Pas Foto ukuran 5x5 dan 3x4 masing masing sebanyak 3 lembar memakai baju putih polos lengan panjang berdasi hitam dengan latar belakang biru atau bagian NAUTIKA (dek) dan merah untuk TEKNIKA (mesin)</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Link Terkait :</h3>
@@ -40,7 +40,7 @@ function showServiceInfo(serviceName) {
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
 				<li>Surat pernyataan belum pernah memiliki buku pelaut merah</li>
-				<li>Fotocopy KTP</li>
+				<li>Fotokopi KTP</li>
 				<li>Surat keterangan sehat dari Rumah Sakit/Puskesmas</li>
 				<li>Sertifikat Pelaut (BST-KLM/SKK/MPR/JMPR)</li>
 				<li>Pas foto berwarna terbaru berlatar belakang warna biru, ukuran 3x4 dan 2x3 masing masing 2 lembar</li>
@@ -53,10 +53,11 @@ function showServiceInfo(serviceName) {
 			<p>Memperpanjang masa berlaku buku pelaut yang sudah habis (Biaya dikenakan 10.000).</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
-				<li>Buku pelaut lama</li>
-				<li>Salinan sertifikat keahlian pelaut</li>
-				<li>Surat keterangan sehat</li>
-				<li>Salinan KTP</li>
+                <li>Fotokopi sertifikat keahlian pelaut yang sudah disahkan oleh Syahbandar</li>
+                <li>Fotokopi sertifikat keterampilan pelaut yang sudah disahkan oleh Syahbandar</li>
+                <li>Sertifikat keterampilan pelaut asli yang sudah disahkan oleh Syahbandar</li>
+				<li>Fotokopi AKTE KELAHIRAN / Surat Kenal Lahir / Kartu Tanda Penduduk (KTP)</li>
+				<li>Buku Pelaut Asli</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Prosedur</h3>
 			<ul class="list-rapi">
@@ -72,12 +73,12 @@ function showServiceInfo(serviceName) {
 			<p>Penggantian buku pelaut yang hilang, rusak, atau penuh.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
-				<li>Fotocopy Sertifikat Keahlian Pelaut dan atau Sertifikat Keterampilan Pelaut</li>
+				<li>Fotokopi Sertifikat Keahlian Pelaut dan atau Sertifikat Keterampilan Pelaut</li>
 				<li>Surat keterangan PRALA bagi TARUNA/I yang akan melaksanakan praktek kerja laut</li>
 				<li>Dokumen asli sertifikat keahlian pelaut atau sertifikat keterampilan pelaut</li>
 				<li>Surat keterangan masa berlayar yang diketahuii syahbandar atau KBRI setempat bagi pelaut yang pernah berlayar</li>
 				<li>Surat keterangan sehat</li>
-				<li>Fotocopy AKTE KELAHIRAN/Surat kenal lahir/Kartu tanda penduduk (KTP)</li>
+				<li>Fotokopi AKTE KELAHIRAN/Surat kenal lahir/Kartu tanda penduduk (KTP)</li>
 				<li>Buku pelaut lama (Asli)</li>
 				<li>Surat kehilangan dari kepolisian apabila buku hilang</li>
 			</ul>
@@ -109,9 +110,17 @@ function showServiceInfo(serviceName) {
 			<ul class="list-rapi">
 				<li>Surat Permohonan kepada Kantor KSOP Utama Makassar</li>
 				<li>Buku Pelaut Asli</li>
-				<li>Fotokopi Buku Saku Asli dan Fotokopi</li>
+				<li>Buku Saku Asli dan Fotokopi</li>
 				<li>Surat Mutasi Naik & Turun Asli dan Fotokopi (Mutasi Sekolah dan Perusahaan Pelayaran)</li>
 				<li>Pas Foto 3x4 (2 Lembar) sesuai jurusan Nautika (Biru) / Teknika (Merah)</li>
+			</ul>
+            <h3 class="font-semibold mt-3">Untuk Taruna</h3>
+			<ul class="list-rapi">
+                <li>Surat Permohonan kepada Kesyahbandaran dan Otoritas Pelabuhan Utama Makassar</li>
+                <li>Buku Pelaut Asli</li>
+                <li>Record Book Asli dan Foto Copy</li>
+                <li>Surat Mutasi Naik & Turun Asli dan Foto Copy (Mutasi Perusahaan)</li>
+                <li>Foto 3 x 4 (2 Lembar) Sesuai Jurus</li>
 			</ul>
         `;
       break;
@@ -121,7 +130,7 @@ function showServiceInfo(serviceName) {
 			<p>Pengajuan Surat Keterangan Kecakapan untuk pelayaran sampai 60 mil laut.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-rapi">
-				<li>Fotocopy KTP/Akte Lahir</li>
+				<li>Fotokopi KTP/Akte Lahir</li>
 				<li>SKCK</li>
 				<li>Surat Keterangan Sehat dari Rumah Sakit atau Puskesmas</li>
 				<li>Surat pernyataan bermaterai</li>
@@ -184,11 +193,14 @@ function showServiceInfo(serviceName) {
 			<p>Penerbitan Seafarer's Identity Document bagi pelaut.</p>
 			<h3 class="font-semibold mt-3">Persyaratan</h3>
 			<ul class="list-disc list-inside">
-				<li>KTP dan SKCK</li>
-				<li>Sertifikat pelaut</li>
-				<li>Surat Pengantar Perusaan</li>
-				<li>NPWP (Opsional)</li>
-				<li>Asusransi Ketenaga kerjaan</li>
+				<li>Sertifikat Pelaut</li>
+                <li>Paspor</li>
+                <li>SKCK</li>
+                <li>KTP</li>
+                <li>Surat Pengantar Perusahaan</li>
+                <li>Asuransi Ketenagakerjaan</li>
+                <li>Buku Pelaut</li>
+                <li>NPWP (Optional)</li>
 			</ul>
 			<h3 class="font-semibold mt-3">Prosedur</h3>
 			<ol class="list-decimal list-inside">
@@ -225,14 +237,24 @@ function showServiceInfo(serviceName) {
 					<h3 class="font-semibold">Tujuan</h3>
 					<p>Pengesahan atau legalisasi dokumen pelaut atau kapal.</p>
 					<h3 class="font-semibold mt-3">Persyaratan</h3>
-					<ul class="list-rapi">
-						<li>Surat permohonan kepada Kesyahbandaran dan Otoritas Pelabuhan Utama Makassar</li>
-						<li>Fotocopy perjanjian kerja laut (PKL)</li>
-						<li>Daftar Crew List</li>
-						<li>Buku pelaut asli</li>
-						<li>Surat kesehatan pelaut</li>
-						<li>Surat pengantar perusahaan/mutasi</li>
+					<h3 class="font-semibold mt-3">Sijil Naik</h3>
+			        <ul class="list-rapi">
+						<li>Buku Pelaut Asli yang sudah disahkan oleh Syahbandar</li>
+                        <li>Surat Pengantar Perusahaan</li>
+                        <li>Daftar Crew List yang sudah disahkan oleh Syahbandar</li>
+                        <li>Surat keterangan kesehatan (Bila ada) dari dokter rumah sakit yang direkomendasi</li>
+                        <li>Dokumen Fotocopy Perjanjian Kerja Laut yang berlaku</li>
+
 					</ul>
+                    <h3 class="font-semibold mt-3">Untuk Taruna</h3>
+			        <ul class="list-rapi">
+                        <li>Surat Permohonan kepada Kesyahbandaran dan Otoritas Pelabuhan Utama Makassar</li>
+                        <li>Foto Copy Perjanjian Kerja Laut (PKL) yang sudah di Sah kan oleh Syahbandar</li>
+                        <li>Daftar Crew List yang sudah di Sah kan oleh Syahbandar</li>
+                        <li>Buku Pelaut Asli yang sudah di Sah kan oleh Syahbandar</li>
+                        <li>Surat Kesehatan Pelaut</li>
+                        <li>Surat Pengantar Perusahaan / Mutasi</li>
+                    </ul>
 					<h3 class="font-semibold mt-3">Prosedur</h3>
 					<ol class="list-decimal list-inside">
 						<li>Serahkan dokumen ke loket penyijilan</li>
